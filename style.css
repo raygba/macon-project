@@ -140,7 +140,6 @@ body a {
     width: 100vw;
     position: relative;
     left: calc(-50vw + 50%);
-    padding: 4% 8%;
     background-color: var(--blue);
     color: var(--white);
 }
@@ -150,6 +149,11 @@ body a {
 }
 
 /* hero image carousel */
+.carousel {
+    width: 100vw;
+    left: calc(-50vw + 50%);
+}
+
 #hero-carousel img {
     max-height: 300px;
 }
@@ -160,6 +164,11 @@ body a {
     width: fit-content;
     margin: auto;
     padding: 0 !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
 }
 
 /* ----------------------------------------------------------------------- MEDIA QUERIES */
@@ -177,9 +186,9 @@ body a {
 
 @media screen and (min-width: 980px) {
 
-    /* using ids with !important to override bootstrap defaults */
-    #nav {
-        padding: 1rem !important;
+    #header {
+        padding-left: 6% !important;
+        padding-right: 6% !important;
     }
 
     /* don't show "navigation" label on full nav menu */
@@ -187,9 +196,14 @@ body a {
         display: none;
     }
 
+    /* using ids with !important to override bootstrap defaults */
     #dropdown-btn {
         margin: 0 !important;
         padding: 0.5rem !important;
+    }
+
+    #quick-links {
+        padding: 2% 16% !important;
     }
 
     .home-section .card {
@@ -198,8 +212,10 @@ body a {
 
     /* hero img carousel */
     #hero-carousel img {
-        max-height: 500px;
-        width: min-content;
+        max-height: 400px;
+        width: 100vw;
+        object-fit: cover;
         margin: auto;
     }
+
 }
