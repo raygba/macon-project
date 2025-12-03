@@ -74,6 +74,8 @@ footer {
 
 footer p {
     font-size: 0.9rem;
+    width: fit-content;
+    margin: 1rem auto;
 }
 
 /* ----------------------------------------------------------------- NAV */
@@ -99,6 +101,7 @@ nav {
     background-color: var(--white);
     font-family: 'IBM Plex Sans', Arial, sans-serif;
     overflow-x: hidden;
+    transition: ease all 0.2s;
 }
 
 h1,
@@ -108,6 +111,7 @@ h4,
 h5,
 h6 {
     font-family: 'Libre Baskerville', Georgia, serif;
+    color: var(--green) !important;
 }
 
 main {
@@ -149,6 +153,10 @@ body a {
     left: calc(-50vw + 50%);
     background-color: var(--blue);
     color: var(--white);
+}
+
+#quick-links-h1 {
+    color: var(--white) !important;
 }
 
 .home-section .card {
