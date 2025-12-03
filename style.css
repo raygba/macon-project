@@ -21,6 +21,7 @@
     --green: #01403A;
     --bluedark: #011C40;
     --blue: #1A1F73;
+    --bluelite: #181e93;
 }
 
 /* ------------------------------------------------------------------- HEADER & FOOTER */
@@ -171,6 +172,9 @@ body a {
 
 #hero-carousel img {
     max-height: 300px;
+        width: 100vw;
+        object-fit: cover;
+        margin: auto;
 }
 
 .carousel-caption {
@@ -196,6 +200,14 @@ body a {
 
     header img {
         max-width: 100px;
+    }
+
+    /* hero img carousel */
+    #hero-carousel img {
+        max-height: 400px;
+        width: 100vw;
+        object-fit: cover;
+        margin: auto;
     }
 }
 

@@ -18,11 +18,12 @@ figcaption {
 
 
 /* ------------------------------------------------------------------ COUNTY GOVT */
-.telno {
+main a {
     text-decoration: none;
+    color: var(--blue) !important;
 }
 
-.telno:hover {
+main a:hover {
     text-decoration: underline;
 }
 
@@ -34,4 +35,16 @@ figcaption {
 .govt-list i:hover {
     font-size: 1.2rem;
     color: var(--black);
+}
+
+/* ----------------------------------------------- DIRECTORY */
+/* wrapper so table stays full width on large screens and scrolls horizontally on small screens */
+.table-wrapper {
+    width: 100%;
+    display: block;
+    overflow: scroll;
+}
+
+table a {
+    text-transform: lowercase;
 }
