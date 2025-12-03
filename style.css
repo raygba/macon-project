@@ -81,8 +81,15 @@ nav {
     border-bottom: 1px solid var(--gold);
 }
 
-.active {
+.nav-link.active,
+.dropdown-item.active,
+.nav-item.active>* {
     font-weight: bold;
+}
+
+.dropdown-item.active {
+    background: transparent !important;
+    color: black !important;
 }
 
 /* ------------------------------------------------------------------------------ BODY */
