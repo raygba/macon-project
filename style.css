@@ -84,6 +84,10 @@ nav {
     border-bottom: 1px solid var(--gold);
 }
 
+#nav-label {
+    font-family: 'Libre Baskerville', Georgia, serif;
+}
+
 .nav-link.active,
 .dropdown-item.active,
 .nav-item.active>* {
@@ -105,14 +109,14 @@ nav {
     transition: ease all 0.2s;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6 {
     font-family: 'Libre Baskerville', Georgia, serif;
-    color: var(--green) !important;
+    color: var(--green);
 }
 
 main {
