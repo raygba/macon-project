@@ -3,9 +3,9 @@
 main img {
     width: 100%;
     height: 100%;
-    max-height: 450px;
+    max-height: 350px;
     object-fit: cover;
-    object-position: bottom;
+    object-position: center;
     margin: 1rem 0 0.5rem 0;
     display: block;
 }
@@ -25,7 +25,8 @@ article h3 {
     font-weight: bolder;
 }
 
-article h4, h5 {
+article h4,
+h5 {
     margin: 1.5rem 0 1rem 0 !important;
 }
 
@@ -56,12 +57,13 @@ main a:hover {
 
 /* change background of whole row when link hovered */
 .sidebar li:has(a:hover) {
-    background-color:hsl(from var(--tan) h s 70%)
+    background-color: hsl(from var(--tan) h s 70%)
 }
 
 .sidebar li a {
     display: block;
-    width: 100%; /* increased touch area */
+    width: 100%;
+    /* increased touch area */
 }
 
 .govt-list i {
@@ -85,18 +87,8 @@ main a:hover {
 }
 
 table {
-    position: relative; /* for sticky header? */
-}
-
-/* this doesn't work and i don't know why */
-thead {
-    position: sticky;
-    top: 0;
-    z-index: 2;
-}
-
-tbody {
-    z-index: 1;
+    position: relative;
+    /* for sticky header? */
 }
 
 thead tr {
@@ -106,4 +98,18 @@ thead tr {
 
 table a {
     text-transform: lowercase;
+}
+
+/* ------------------------------------------------------------------ DSS */
+.dss-link {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+    width: 8rem;
+    gap: 1rem;
+}
+
+.dss-link i {
+    font-size: 2rem;
 }

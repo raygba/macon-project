@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Taxes - Macon County</title>
+    <link rel="stylesheet" href="page-style.css">
+    <title>Senior Services - Macon County</title>
     <!-- bootstrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -16,11 +17,6 @@
 <body id="body">
 
     <a class="visually-hidden-focusable" href="#main" id="skip-link">Skip to main content</a>
-
-    <!-- <div class="govt-banner list-group-item list-group-item-secondary d-flex p-2 align-items-center">
-        <img src="images/US_Flag.png" alt="">
-        Not an official government website.
-    </div> -->
 
     <header class="d-flex p-2 align-items-center" id="header">
         <div class="d-flex flex-nowrap">
@@ -55,12 +51,13 @@
                         <a href="#" class="dropdown-item disabled">Ordinances</a>
                     </div>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown active">
                     <button class="btn btn-light dropdown-toggle px-0 my-1" id="dropdown-btn" data-bs-toggle="dropdown"
                         role="button" href="#">County Agencies</button>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a href="health.html" class="dropdown-item">Public Health</a>
                         <a href="dss.html" class="dropdown-item">Social Services</a>
+                        <a href="seniors.html" class="dropdown-item active">Senior Services</a>
                         <a href="#" class="dropdown-item disabled">Animal Services</a>
                         <a href="#" class="dropdown-item disabled">Board of Elections</a>
                         <a href="#" class="dropdown-item disabled">Clerk of Court</a>
@@ -77,19 +74,19 @@
                     <button class="btn btn-light dropdown-toggle px-0 my-1" id="dropdown-btn" data-bs-toggle="dropdown"
                         role="button" href="#">Public Safety</button>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a href="police.html" class="dropdown-item">Sheriff's Office</a>
-                        <a href="#" class="dropdown-item disabled">Emergency Management</a>
+                        <a href="ems.html" class="dropdown-item">Emergency Management</a>
+                        <a href="#" class="dropdown-item disabled">Sheriff's Office</a>
                         <a href="#" class="dropdown-item disabled">911 Center</a>
                         <a href="#" class="dropdown-item disabled">Emergency Medical Services</a>
                         <a href="#" class="dropdown-item disabled">Fire Departments</a>
                         <a href="#" class="dropdown-item disabled">Safe Newborn Surrender Protocol</a>
                     </div>
                 </li>
-                <li class="nav-item dropdown active">
+                <li class="nav-item dropdown">
                     <button class="btn btn-light dropdown-toggle px-0 my-1" id="dropdown-btn" data-bs-toggle="dropdown"
                         role="button" href="#">Online Services</button>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a href="tax.html" class="dropdown-item active">Taxes</a>
+                        <a href="#" class="dropdown-item disabled">Taxes</a>
                         <a href="#" class="dropdown-item disabled">GIS Mapping</a>
                         <a href="#" class="dropdown-item disabled">Form Downloads</a>
                         <a href="#" class="dropdown-item disabled">Permits, Licenses, & Inspections</a>
@@ -104,13 +101,92 @@
         </div>
     </nav>
 
-    <main id="main" class="container">
+    <main id="main" class="container-fluid">
+        <div class="row justify-content-between">
+            <aside class="sidebar col-lg-2">
+                <h4>County Agencies</h4>
+                <ul class="list-unstyled">
+                    <li><a href="health.html">Public Health</a></li>
+                    <li><a href="dss.html">Social Services</a></li>
+                    <li><a class="fw-bold" href="dss.html">Senior Services</a></li>
+                    <li>Animal Services</li>
+                    <li>Board of Elections</li>
+                    <li>Clerk of Court</li>
+                    <li>Economic Development Commission</li>
+                    <li>Education</li>
+                    <li>Finance Department</li>
+                    <li>Housing Department</li>
+                    <li>Parks & Recreation</li>
+                    <li>Planning, Permitting, & Development</li>
+                    <li>Veterans</li>
+                </ul>
+            </aside>
 
+            <article class="col-lg-8 mx-auto py-2">
+
+                <h2 class="page-title">Senior Services</h2>
+                <a href="tel:8283492058" class="telno h4">(828) 349-2058</a>
+
+                <figure class="">
+                    <img src="images/pexels-shkrabaanthony-7345443-min.jpg"
+                        alt="A woman giving grocery donations to an older woman." style="max-height:400px;">
+                    <figcaption>photo by Antoni Shkraba</figcaption>
+                </figure>
+
+                <h3>Macon County Senior Services & Community Resource Center</h3>
+                <ul class="list-unstyled">
+                    <li>108 Wayah Street, Franklin, NC 28734</li>
+                    <li><span class="fw-bold">Phone:</span> <a href="tel:8283492058">(828) 349-2058</a></li>
+                    <li><span class="fw-bold">Fax:</span> (828) 369-0610</li>
+                    <li><span class="fw-bold">Hours:</span> Monday &ndash; Friday, 8:00 AM &ndash; 5:00 PM</li>
+                </ul>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptatum minima dolore laborum, iusto
+                    aspernatur quis est cupiditate sunt dolores dolor quod deleniti fugiat eos rem expedita culpa velit
+                    incidunt!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi facere cum error, quae non rem quasi
+                    quaerat. Eaque nulla saepe voluptas unde. Impedit animi similique recusandae facere saepe culpa
+                    labore.</p>
+
+                <h4>Eligibility</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, in tempore! Delectus dolorum
+                    veritatis nihil consequatur dolorem saepe animi alias atque enim eum perspiciatis provident,
+                    voluptas exercitationem fugiat maiores voluptates?</p>
+
+                <h4>Information and Assistance</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi harum quos ullam dolore quae quis
+                    illum distinctio architecto quibusdam, optio quod laboriosam dolorem. Laborum odit, quam ducimus
+                    harum sequi aut!</p>
+                <h4>Adult Daycare</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque iste, aut quisquam quibusdam quod,
+                    perspiciatis cupiditate reprehenderit tempore vitae rerum, id quaerat ea quas unde? Facilis
+                    molestiae corporis ullam architecto!</p>
+                <h4>Home-Delivered Meals</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam iusto nobis recusandae, numquam
+                    perspiciatis quibusdam minus amet excepturi debitis odio dicta incidunt eius ut animi illum ea quos
+                    optio atque?</p>
+                <h4>Congregate Meals</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus debitis dolores animi eos minima
+                    inventore veniam nihil sequi facere enim, quo reiciendis ducimus aliquid impedit sed quos explicabo,
+                    sint quasi.</p>
+                <h4>Senior Health Insurance Information Program (SHIIP)</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo laudantium aspernatur quidem
+                    asperiores unde porro dolorum recusandae animi soluta fugit nemo provident dolorem eaque, aliquam
+                    minus molestiae non iste quod.</p>
+                <h4>Search, Track, Assist, Respond, and Rescue (STARR)</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sapiente qui blanditiis voluptas
+                    praesentium, repellat quae assumenda, porro necessitatibus numquam quos dolorem, quidem a ipsam
+                    ratione perferendis aspernatur. Fuga, ratione.</p>
+                <h4>Job & Volunteer Opportunities</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolor consequatur repellat
+                    dolores fugiat doloribus eveniet, soluta suscipit sapiente velit tempora ducimus vitae nemo, alias
+                    beatae vero earum aliquid. Perspiciatis?</p>
+            </article>
     </main>
 
     <footer>
         <p>&copy; Macon County 2025. All rights reserved.</p>
-        <p>Photo credits: Harrison Keely, Mark Stebnicki, Nader Moussa, thomson200</p>
+        <p>Designed by <a href="https://github.com/raygba">Ray Kraiss</a> for Wake Tech Community College</p>
         </ul>
     </footer>
 

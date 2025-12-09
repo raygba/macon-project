@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Sheriff's Office - Macon County</title>
+    <link rel="stylesheet" href="page-style.css">
+    <title>Emergency Management - Macon County</title>
     <!-- bootstrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -16,11 +17,6 @@
 <body id="body">
 
     <a class="visually-hidden-focusable" href="#main" id="skip-link">Skip to main content</a>
-
-    <!-- <div class="govt-banner list-group-item list-group-item-secondary d-flex p-2 align-items-center">
-        <img src="images/US_Flag.png" alt="">
-        Not an official government website.
-    </div> -->
 
     <header class="d-flex p-2 align-items-center" id="header">
         <div class="d-flex flex-nowrap">
@@ -61,6 +57,7 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a href="health.html" class="dropdown-item">Public Health</a>
                         <a href="dss.html" class="dropdown-item">Social Services</a>
+                        <a href="seniors.html" class="dropdown-item">Senior Services</a>
                         <a href="#" class="dropdown-item disabled">Animal Services</a>
                         <a href="#" class="dropdown-item disabled">Board of Elections</a>
                         <a href="#" class="dropdown-item disabled">Clerk of Court</a>
@@ -73,12 +70,12 @@
                         <a href="#" class="dropdown-item disabled">Veterans</a>
                     </div>
                 </li>
-                <li class="nav-item active dropdown">
+                <li class="nav-item dropdown active">
                     <button class="btn btn-light dropdown-toggle px-0 my-1" id="dropdown-btn" data-bs-toggle="dropdown"
                         role="button" href="#">Public Safety</button>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a href="police.html" class="dropdown-item active">Sheriff's Office</a>
-                        <a href="#" class="dropdown-item disabled">Emergency Management</a>
+                        <a href="ems.html" class="dropdown-item active">Emergency Management</a>
+                        <a href="#" class="dropdown-item disabled">Sheriff's Office</a>
                         <a href="#" class="dropdown-item disabled">911 Center</a>
                         <a href="#" class="dropdown-item disabled">Emergency Medical Services</a>
                         <a href="#" class="dropdown-item disabled">Fire Departments</a>
@@ -89,7 +86,7 @@
                     <button class="btn btn-light dropdown-toggle px-0 my-1" id="dropdown-btn" data-bs-toggle="dropdown"
                         role="button" href="#">Online Services</button>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a href="tax.html" class="dropdown-item">Taxes</a>
+                        <a href="#" class="dropdown-item disabled">Taxes</a>
                         <a href="#" class="dropdown-item disabled">GIS Mapping</a>
                         <a href="#" class="dropdown-item disabled">Form Downloads</a>
                         <a href="#" class="dropdown-item disabled">Permits, Licenses, & Inspections</a>
@@ -104,13 +101,55 @@
         </div>
     </nav>
 
-    <main id="main" class="container">
+    <main id="main" class="container-fluid">
+        <div class="govt row justify-content-between">
+            <aside class="sidebar col-lg-2">
+                <h4>Public Safety</h4>
+                <ul class="list-unstyled">
+                    <li><a class="fw-bold" href="#">Emergency Management</a></li>
+                    <li>Sheriff's Office</li>
+                    <li>911 Center</li>
+                    <li>Emergency Medical Services</li>
+                    <li>Fire Departments</li>
+                    <li>Safe Newborn Surrender Protocol</li>
+                </ul>
+            </aside>
 
+            <article class="col-lg-8 mx-auto py-2">
+                <h2 class="page-title">Emergency Management</h2>
+                <a href="tel:8283492064" class="telno h4">(828) 349-2064</a>
+
+                <figure class="float-end ms-4">
+                    <img src="images/pexels-rdne-6519909-min.jpg" alt="The back of an ambulance with the words 'dial 911' and EMS symbol.">
+                    <figcaption>photo by RDNE Stock Project</figcaption>
+                </figure>
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos ratione fugiat consequuntur dolor
+                    asperiores quidem nemo illum, accusantium exercitationem vitae eos facere nostrum odio error autem,
+                    odit et. Commodi, eos.</p>
+
+                <h3>CodeRed Sign-Up</h3>
+                <p class="fw-bold">Text "MaconNC" to 99411 to enroll in Macon County's emergency alert program.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi dignissimos error nobis cumque
+                    cupiditate ex, quas magnam inventore non voluptatem, deserunt sequi voluptate sapiente, fugiat
+                    laudantium. Nemo voluptates harum facilis.</p>
+
+                <h3>Emergency Services</h3>
+                <ul>
+                    <li>911 Communications</li>
+                    <li>911 Addressing</li>
+                    <li>Emergency Management</li>
+                    <li>Emergency Medical Services</li>
+                    <li>Fire Marshal's Office</li>
+                </ul>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui quam nulla corrupti molestiae explicabo deleniti quaerat fuga facilis, dicta repudiandae. At, dicta magnam dolorem ad soluta odit vel. Delectus, nihil.</p>
+            </article>
+        </div>
     </main>
 
     <footer>
         <p>&copy; Macon County 2025. All rights reserved.</p>
-        <p>Photo credits: Harrison Keely, Mark Stebnicki, Nader Moussa, thomson200</p>
+        <p>Designed by <a href="https://github.com/raygba">Ray Kraiss</a> for Wake Tech Community College</p>
         </ul>
     </footer>
 
